@@ -1,0 +1,397 @@
+/* General Rulesets */
+* {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: url("https://content.codecademy.com/courses/learn-handlebars/musicon/musicon_bg.png") no-repeat center center fixed;
+  background-size: cover;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  position: static;
+}
+
+header {
+  width: 100%;
+  padding-top: 3%;
+  min-height: 70px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.branding {
+  float: left;
+}
+
+.branding h1 {
+  font-weight: normal;
+}
+
+nav {
+  float: right;
+}
+
+.navbar {
+  margin-top: 10%;
+  margin-bottom: 0%;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.navbar li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+}
+
+.navbar li a:hover,
+.navbar .current a {
+  color: #ffffff;
+}
+
+/* Home Page Rulesets */
+
+#introduction {
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 50%;
+}
+
+#introduction h1 {
+  font-size: 3.75rem;
+}
+
+#introduction p {
+  margin: 10% auto;
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+
+#introduction a {
+  display: block;
+  width: 20%;
+  padding: 2% 2%;
+  margin: 0 auto;
+  margin-top: 0%;
+  color: #ffffff;
+  background-color: #4c7ef3;
+  border-radius: 4px;
+}
+
+#introduction a:hover {
+  background-color: #26a69a;
+}
+
+/* Store Page Rulesets */
+
+#showcase {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.instrument {
+  width: 100%;
+  overflow: auto;
+  background: #ffffff;
+  opacity: 0.9;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  border-radius: 5px;
+  margin-bottom: 0.5%;
+}
+
+.image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  min-width: 100px;
+  margin: 0 auto;
+}
+
+.instrument .name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  margin: -1% auto;
+  padding: 2%;
+  font-size: 1rem;
+}
+
+.name,
+.description,
+.price,
+del {
+  color: #000000;
+  text-align: left;
+}
+
+.description,
+.price {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.description {
+  height: 100%;
+  font-size: 1rem;
+  overflow: auto;
+}
+
+.price {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sale {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fa4359;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Contact Page Rulesets */
+
+#connection {
+  width: inherit;
+  margin: 15% 15%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#top {
+  margin: 0.5% 0;
+}
+
+#top h2 {
+  font-size: 1.875rem;
+  font-weight: normal;
+  line-height: 1.875rem;
+  margin-bottom: 5%;
+}
+
+#top p {
+  font-size: 1.125rem;
+  font-weight: lighter;
+  line-height: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  width: 100%;
+  margin: 2.5% auto;
+}
+
+.contact p,
+.contact ul {
+  margin: 1%;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+#location {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Media screen */
+
+@media (min-width: 1025px) {
+  .instrument img {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .instrument img {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .instrument img {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 416px) {
+  body {
+    width: 416px;
+  }
+  .showcase {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  .instrument {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .instrument img {
+    margin-top: 0.5rem;
+    width: 90%;
+  }
+  .instrument .details {
+    width: 95%;
+    text-align: center;
+  }
+  .instrument .details h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  .instrument .details p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .instrument .details .price {
+    font-size: 1.15rem;
+  }
+  .instrument .details .sale {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 376px) {
+  body {
+    width: 376px;
+  }
+
+  #introduction h1 {
+    font-size: 2.875rem;
+  }
+  #introduction p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #introduction a {
+    width: 50%;
+  }
+  .showcase {
+    padding-bottom: 2rem;
+  }
+  .instrument {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .instrument img {
+    margin-top: 0.5rem;
+    width: 90%;
+  }
+  .instrument .details {
+    width: 95%;
+    text-align: center;
+  }
+  .instrument .details h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  .instrument .details p {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  #connection {
+    width: 70%;
+  }
+  #connection p {
+    margin: 15% 0;
+  }
+
+  @media (max-width: 281px) {
+    body {
+      width: 281px;
+    }
+  
+    #introduction h1 {
+      font-size: 2.875rem;
+    }
+    #introduction p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    #introduction a {
+      width: 50%;
+    }
+    .showcase {
+      padding-bottom: 2rem;
+    }
+    .instrument {
+      display: block;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .instrument img {
+      margin-top: 0.5rem;
+      width: 90%;
+    }
+    .instrument .details {
+      width: 95%;
+      text-align: center;
+    }
+    .instrument .details h2 {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    .instrument .details p {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+    }
+    .instrument .details .price {
+      text-align: center;
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+    .instrument .details .sale {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    #connection {
+      width: 70%;
+    }
+    #connection p {
+      margin: 15% 0;
+    }
+  
+}
